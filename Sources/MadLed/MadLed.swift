@@ -11,10 +11,12 @@ final public class MadLed {
         self.ledOnValue = ledOnValue
     }
 
+    // Turn on the LED.
     public func on() {
         pin.write(ledOnValue)
     }
 
+    // Turn off the LED.
     public func off() {
         pin.write(!ledOnValue)
     }
